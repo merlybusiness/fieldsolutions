@@ -1,1 +1,3 @@
----\ntitle: 'Home'\n---
+---
+title: 'Home'
+---
