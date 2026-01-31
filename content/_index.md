@@ -12,8 +12,8 @@ services:
     desc: "Consulting on machinery installation, laser alignment, structural rigging, and precision maintenance troubleshooting for industrial facilities."
   - title: "Marine Consulting"
     desc: "Specialized marine engine analysis, diesel troubleshooting, onboard electrical systems, and structural hull assessments."
-  - title: "Mechanical & Fleet"
-    desc: "Consulting for automotive fleet maintenance, heavy construction equipment, and customized hydraulic or mechanical system design."
+  - title: "Automotive & Fleet"
+    desc: "Advanced vehicle diagnostics, engine performance consulting, and specialized maintenance strategies for automotive fleets and heavy equipment."
   - title: "Facility Infrastructure"
     desc: "Expert oversight for building mechanical systems, structural equipment installs, and long-term facility maintenance planning."
 ---
