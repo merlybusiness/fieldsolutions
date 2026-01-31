@@ -1,61 +1,34 @@
 {{ define "main" }}
 <main>
-    <section class="hero">
-        <div class="container">
-            <h2 style="font-size: 2.2rem; color: #002868; margin-bottom: 15px;">American Expertise for Complex Systems</h2>
-            <p style="font-size: 1.1rem; max-width: 750px; margin: 0 auto 30px auto;">Solving mechanical problems across industrial and marine sectors with precision and patriotic service.</p>
-            
-            <div class="hero-buttons">
-                <!-- PRIMARY: THE PORTAL (RED) -->
-                <a href="{{ .Params.portal_link }}" class="btn btn-red">CLIENT PORTAL (PAY OPEN TAB)</a>
+    <!-- HERO SECTION WITH IMAGE BACKGROUND -->
+    <section class="hero-image-box">
+        <div class="hero-overlay">
+            <div class="container" style="background:transparent; border:none;">
+                <p class="hero-pretitle">CONSULTING & ADVISORY</p>
+                <h2 class="hero-main-title">American Expertise for Complex Systems</h2>
+                <p class="hero-subtext">Solving mechanical problems across industrial and marine sectors.</p>
                 
-                <span class="btn-spacer"></span>
-
-                <!-- SECONDARY: QUICK DEPOSIT (NAVY) -->
-                <a href="{{ .Params.invoice_link }}" class="btn btn-navy">QUICK DEPOSIT / PAYMENT</a>
+                <div class="hero-buttons">
+                    <a href="{{ .Params.portal_link }}" class="btn btn-red">CLIENT PORTAL</a>
+                    <a href="{{ .Params.invoice_link }}" class="btn btn-navy">QUICK PAYMENT</a>
+                </div>
             </div>
-
-            <p style="margin-top: 25px; font-size: 0.9rem;">
-                Looking for recurring support? 
-                <a href="{{ .Params.monthly_link }}" style="color: #002868; font-weight: bold; text-decoration: underline;">Sign up for a Monthly Retainer</a>
-            </p>
         </div>
+        <!-- THE GRASSI SLANT -->
+        <div class="slanted-divider"></div>
     </section>
 
-    <section class="container">
+    <!-- SERVICES SECTION -->
+    <section class="container services-section">
+        <h2 class="section-heading">BUILD YOUR BUSINESS ON SOLID ADVICE AND GUIDANCE</h2>
         <div class="grid">
             {{ range .Params.services }}
             <div class="card">
-                <h3 style="color: #002868; margin-top: 0;">{{ .title }}</h3>
+                <h3>{{ .title }}</h3>
                 <p>{{ .desc }}</p>
             </div>
             {{ end }}
         </div>
     </section>
 </main>
-
-<style>
-    /* These styles handle the button layout specifically */
-    .hero-buttons { display: flex; flex-direction: column; align-items: center; gap: 15px; }
-    .btn { 
-        padding: 1.1rem 2rem; 
-        color: white; 
-        text-decoration: none; 
-        font-weight: bold; 
-        border-radius: 4px; 
-        width: 100%; 
-        max-width: 320px; 
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    .btn-red { background-color: #BF0A30; }
-    .btn-navy { background-color: #002868; }
-    .btn-spacer { display: none; }
-
-    @media (min-width: 600px) {
-        .hero-buttons { flex-direction: row; justify-content: center; }
-        .btn { width: auto; }
-        .btn-spacer { display: inline-block; width: 10px; }
-    }
-</style>
 {{ end }}

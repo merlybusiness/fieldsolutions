@@ -86,3 +86,67 @@ h1 { font-size: 2.5rem; margin: 0; letter-spacing: 2px; font-weight: 900; }
 
 footer { background: #1a1a1a; color: #aaa; padding: 3rem 1rem; font-size: 0.9rem; }
 footer a { color: white; text-decoration: underline; }
+
+/* Hero with Background Image */
+.hero-image-box {
+    position: relative;
+    height: 75vh;
+    min-height: 550px;
+    background-image: url('/images/hero.png'); /* YOU NEED TO PUT YOUR IMAGE HERE */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6); /* Darkens the image so text is readable */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-pretitle { color: #f2b705; font-weight: 800; letter-spacing: 2px; margin-bottom: 0.5rem; text-transform: uppercase; }
+.hero-main-title { font-size: 3.5rem; font-weight: 900; text-transform: uppercase; line-height: 1.1; margin: 0 auto; max-width: 900px; }
+.hero-subtext { font-size: 1.3rem; margin-top: 20px; font-weight: 400; }
+
+/* The Grassi Slant */
+.slanted-divider {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 100px;
+    background: white;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    z-index: 10;
+}
+
+/* Yellow Accent line */
+.slanted-divider::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    height: 8px;
+    background: #f2b705;
+}
+
+.section-heading {
+    color: #002868;
+    font-size: 2.2rem;
+    max-width: 800px;
+    margin: 2rem auto 4rem auto;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.card h3 { 
+    color: #002868; 
+    font-weight: 800; 
+    border-bottom: 4px solid #f2b705; 
+    display: inline-block; 
+    padding-bottom: 5px; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
