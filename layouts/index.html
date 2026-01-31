@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="hero">
+    <h2>The Jack-of-all-Trades for Modern Industry</h2>
+    <p>Providing precision solutions for whatever moves, floats, or stands.</p>
+    <a href="{{ .Site.Params.stripe_payment_link }}" class="btn">Pay an Invoice</a>
+</div>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <h3>Millwright & Industrial</h3>
+            <p>Precision machinery installation, laser alignment, and complex system troubleshooting.</p>
+        </div>
+        <div class="card">
+            <h3>Marine Services</h3>
+            <p>Specialized marine mechanics, diesel systems, and structural consulting for vessels.</p>
+        </div>
+        <div class="card">
+            <h3>Mechanical & Fleet</h3>
+            <p>From heavy equipment to automotive fleets, we keep the gears turning.</p>
+        </div>
+        <div class="card">
+            <h3>Construction & Facilities</h3>
+            <p>Facility maintenance consulting, building systems, and structural equipment installs.</p>
+        </div>
+    </div>
+</div>
+{{ end }}

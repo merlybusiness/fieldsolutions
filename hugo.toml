@@ -1,0 +1,9 @@
+baseURL = 'https://fieldsolutions.us'
+languageCode = 'en-us'
+title = 'Field Solutions'
+theme = [] # We are using a custom layout
+
+[params]
+    description = "Expert Industrial, Marine, and Mechanical Consulting"
+    stripe_payment_link = "#" # REPLACE WITH YOUR STRIPE LINK
+    stripe_portal_link = "#"  # REPLACE WITH YOUR STRIPE PORTAL LINK

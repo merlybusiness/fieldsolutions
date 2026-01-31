@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Title }} | Field Solutions</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+<svg width="150" height="90" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M100 5 L195 60 L100 115 L5 60 Z" fill="white" stroke="white" stroke-width="2"/>
+  <path d="M100 12 L185 60 L100 108 L15 60 Z" fill="none" stroke="white" stroke-width="1.5"/>
+  <text x="50%" y="65%" font-family="Arial Black, sans-serif" font-size="50" fill="#BF0A30" text-anchor="middle" dominant-baseline="middle">FS</text>
+</svg>
+</div>
+        <h1>FIELD SOLUTIONS</h1>
+        <p>Expert Consulting for Mechanical, Marine, & Millwright Systems</p>
+    </header>
+    {{ block "main" . }}{{ end }}
+    <footer>
+        <p>&copy; {{ now.Format "2006" }} Field Solutions. Patriotic Service, American Expertise.</p>
+        <a href="{{ .Site.Params.stripe_portal_link }}" style="color:white;">Client Account Portal</a>
+    </footer>
+</body>
+</html>

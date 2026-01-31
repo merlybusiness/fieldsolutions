@@ -1,0 +1,10 @@
+body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; line-height: 1.6; }
+header { background: #002868; color: white; padding: 2rem; text-align: center; border-bottom: 5px solid #BF0A30; }
+.hero { padding: 4rem 2rem; text-align: center; background: #f4f4f4; }
+.btn { background: #BF0A30; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 10px;}
+.container { max-width: 1000px; margin: auto; padding: 2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px; background: white; border-top: 4px solid #002868; }
+.card h3 { color: #002868; margin-top: 0; }
+footer { background: #333; color: white; text-align: center; padding: 2rem; margin-top: 40px; }
+.logo { max-width: 150px; margin-bottom: 10px; }
