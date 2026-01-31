@@ -1,4 +1,6 @@
 baseURL = 'https://fieldsolutions.us/'
 languageCode = 'en-us'
 title = 'Field Solutions'
-disableKinds = ["taxonomy", "term"]
+
+# Clean up the site by disabling extra pages we don't need
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
