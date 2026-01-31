@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | Field Solutions</title>
-    <!-- Make sure this path is correct! -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-		    <svg class="logo-svg" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
-		        <path d="M100 5 L195 60 L100 115 L5 60 Z" fill="white" />
-		        <path d="M100 12 L185 60 L100 108 L15 60 Z" fill="none" stroke="#002868" stroke-width="2"/>
-		        <text x="50%" y="68%" font-family="Arial Black, sans-serif" font-size="55" fill="#BF0A30" text-anchor="middle">FS</text>
-		    </svg>
-		    <h1>FIELD SOLUTIONS</h1>
-		    <p class="tagline">Expert Consulting for Whatever Moves, Floats, or Stands</p>
-		</header>
+<header>
+    <div class="header-container">
+        <!-- Logo on the Left -->
+        <svg class="logo-svg" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100 5 L195 60 L100 115 L5 60 Z" fill="white" />
+            <path d="M100 12 L185 60 L100 108 L15 60 Z" fill="none" stroke="#002868" stroke-width="2"/>
+            <text x="50%" y="68%" font-family="Arial Black, sans-serif" font-size="55" fill="#BF0A30" text-anchor="middle">FS</text>
+        </svg>
+
+        <!-- Text on the Right -->
+        <div class="header-text">
+            <h1>FIELD SOLUTIONS</h1>
+            <p class="tagline">Expert Consulting for Whatever Moves, Floats, or Stands</p>
+        </div>
+    </div>
+</header>
 
     {{ block "main" . }}{{ end }}
 

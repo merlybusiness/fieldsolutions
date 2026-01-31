@@ -1,0 +1,13 @@
+<svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- White Background Diamond -->
+    <path d="M100 10 L190 100 L100 190 L10 100 Z" fill="white" />
+    
+    <!-- Outer Navy Border -->
+    <path d="M100 10 L190 100 L100 190 L10 100 Z" fill="none" stroke="#002868" stroke-width="4"/>
+    
+    <!-- Inner Navy Border -->
+    <path d="M100 22 L178 100 L100 178 L22 100 Z" fill="none" stroke="#002868" stroke-width="2"/>
+    
+    <!-- Large Red FS (Arial Black for that chunky industrial look) -->
+    <text x="100" y="132" font-family="Arial Black, sans-serif" font-size="90" fill="#BF0A30" text-anchor="middle">FS</text>
+</svg>
