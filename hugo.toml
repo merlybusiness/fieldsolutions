@@ -1,8 +1,3 @@
 baseURL = 'https://fieldsolutions.us/'
 languageCode = 'en-us'
 title = 'Field Solutions'
-
-[params]
-    description = "Expert Industrial, Marine, and Mechanical Consulting"
-    stripe_payment_link = "#" 
-    stripe_portal_link = "#"
